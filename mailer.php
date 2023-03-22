@@ -23,7 +23,9 @@ if (isset($_POST['submit'])) {
     $attachment = chunk_split(base64_encode(file_get_contents($file_temp)));
     $boundary = md5(date('r', time()));
     $headers .= "\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"_1_$boundary\"";
-    $message = "--_1_$boundary\r\nContent-Type: text/plain; charset=\"iso-8859-1\"\r\nContent-Transfer-Encoding: 7bit\r\n\r\n$message\r\n\r\n--_1_$boundary\r\nContent-Type: $file_type; name=\"$file_name\"\r\nContent-Disposition: attachment; filename=\"$file_name\"\r\nContent-Transfer-Encoding: base64\r\n\r\n$attachment\r\n\r\n--_1_$boundary--";
+    $message = "--_1_$boundary\r\nContent-Type: text/plain; charset=\"iso-8859-1\"\r\nContent-Transfer-Encoding:
+     7bit\r\n\r\n$message\r\n\r\n--_1_$boundary\r\nContent-Type: $file_type; name=\"$file_name\"\r\nContent-Disposition:
+      attachment; filename=\"$file_name\"\r\nContent-Transfer-Encoding: base64\r\n\r\n$attachment\r\n\r\n--_1_$boundary--";
   }
 
   // Envia o e-mail
