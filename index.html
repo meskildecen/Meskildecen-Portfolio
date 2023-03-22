@@ -247,9 +247,8 @@
                 <h1 class="scroll-animation" data-animation="fade_from_bottom">Oi, eu sou <span>Marcos
                     Eskildecen</span>, Developer PHP.</h1>
               </div>
-              <p class="scroll-animation" data-animation="fade_from_bottom">Este é meu portfólio, a coleção de projetos
-                que
-                demonstram minhas habilidades e paixão pela programação.</p>
+              <p class="scroll-animation" data-animation="fade_from_bottom">Este é meu portfólio, a coleção de projetos que
+                 demonstram minhas habilidades e paixão pela programação.</p>
               <a href="#portfolio" class="go-to-project-btn scroll-to scroll-animation" data-animation="rotate_up">
                 <img src="./assets/images/round-text.png" alt="Rounded Text">
                 <i class="las la-arrow-down"></i>
@@ -275,8 +274,7 @@
                   <i class="lar la-user"></i> Sobre
                 </h4>
                 <h1 class="scroll-animation" data-animation="fade_from_bottom">Em busca de uma nova carreira na área de
-                  <span> Desenvolvimento</span>
-                </h1>
+                  <span> Desenvolvimento</span></h1>
               </div>
               <p class="scroll-animation" data-animation="fade_from_bottom">
                 Com formação em Análise e Desenvolvimento de Sistemas e certificações em ITIL, Devops Essentials e Scrum
@@ -532,7 +530,7 @@
                       <h2><a href="https://www.lightskull.com.br/">LightSkull</a></h2>
                     </div>
                   </div>
-                </div>
+                </div>  
                 <!-- <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
                   <div class="portfolio-item portfolio-half">
                     <div class="portfolio-item-inner">
@@ -785,62 +783,52 @@
                   class="__cf_email__" data-cfemail="">meskildecen@gmail.com</a>
               </h3>
               <p id="required-msg">* Os campos marcados são de preenchimento obrigatório.</p>
+              
 
-
-              <form class="contact-form scroll-animation" action="mailer.php" method="post" enctype="multipart/form-data" data-animation="fade_from_bottom">
-
-                <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
-                  Sua mensagem foi enviada com sucesso.
+              <form class="contact-form scroll-animation" action="mailer.php" method="post" enctype="multipart/form-data">
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <label for="full-name">full Name <sup>*</sup></label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Your Full Name">
+                  </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="input-group">
-                      <label for="full-name">Nome Completo <sup>*</sup></label>
-                      <input type="text" name="full-name" id="full-name" placeholder="Seu nome completo">
-                    </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <label for="email">Email <sup>*</sup></label>
+                    <input type="email" name="email" id="email" placeholder="Your email adress">
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-group">
-                      <label for="email">E-mail <sup>*</sup></label>
-                      <input type="email" name="email" id="email" placeholder="Seu endereço de e-mail">
-                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <label for="phone-number">phone <span>(optional)</span></label>
+                    <input type="text" name="phone-number" id="phone-number" placeholder="Your number phone">
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-group">
-                      <label for="phone-number">Telefone <span>(optional)</span></label>
-                      <input type="text" name="phone-number" id="phone-number" placeholder="Seu número de telefone">
-                    </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" placeholder="Wrire your message here ..."></textarea>
                   </div>
-                  <div class="col-md-12">
-                    <div class="input-group">
-                      <label for="message">Mensagem</label>
-                      <textarea name="message" id="message" placeholder="Escreva aqui a sua mensagem ..."></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="input-group upload-attachment">
-                      <div>
-                        <label for="upload-attachment">
-                          <i class="las la-cloud-upload-alt"></i> Adicionar Anexo
-                          <input type="file" name="file" id="upload-attachment">
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="input-group submit-btn-wrap">
-                      <button type="submit" name="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </div>
+                
+                <div class="col-md-12">
+                  <div class="input-group upload-attachment">
+                    <div>
+                      <label for="upload-attachment">
+                        <i class="las la-cloud-upload-alt"></i> add an attachment
+                        <input type="file" name="file" id="upload-attachment">
+                      </label>
                     </div>
                   </div>
                 </div>
+
+                <button type="submit" name="submit" class="btn btn-primary">Enviar Mensagem</button>
               </form>
-            </div>
 
+            </div>
           </div>
+        </section>
       </div>
-      </section>
-    </div>
     </div>
   </main>
   <script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
